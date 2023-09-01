@@ -121,11 +121,12 @@ const useWeatherApi = (currentLocation) => {
         ]);
 
       // 用prevState先取出舊資料再進行更改，避免有key-value缺失
-      // 例如不同API更新物件裡的不同key-value，放進新資料而未保存舊資料，此處因兩個API同時setState可以不用這樣做
+      // 例如不同API更新物件裡的不同key-value，放進新資料而未保存舊資料，此處因三個API同時setState可以不用這樣做
       // setWeatherElement((prevState) => ({
       //   ...prevState,
       //   ...currentWeather,
       //   ...weatherForecast,
+      //   ...currentMoment,
       // }));
       setWeatherElement({
         ...currentWeather,

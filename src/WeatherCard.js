@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import styled from "@emotion/styled";
 // 載入圖示
 import { ReactComponent as AirFlowIcon } from "./images/airFlow.svg";

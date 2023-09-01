@@ -1,8 +1,8 @@
 import styled from "@emotion/styled";
-import { useState, useEffect, useCallback } from "react";
-import WeatherCard from "./WeatherCard";
+import { useState, useEffect } from "react";
 import { ThemeProvider } from "@emotion/react";
 import useWeatherApi from "./useWeatherApi";
+import WeatherCard from "./WeatherCard";
 import WeatherSetting from "./WeatherSetting";
 import { findLocation } from "./utils";
 
