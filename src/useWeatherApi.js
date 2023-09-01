@@ -110,8 +110,8 @@ const useWeatherApi = (currentLocation) => {
 
   // 使用useCallback保存函式fetchingData，讓其在Function Component被呼叫時不被重新定義
   const fetchData = useCallback(() => {
-    // 因資料較少，讓兩筆資料同時出現，使用體驗較佳
-    // 定義一個非同步函式，讓fetchCurrentWeather()與fetchWeatherForecast()的API都回傳成功才繼續執行
+    // 因資料較少，讓三筆資料同時出現，使用體驗較佳
+    // 定義一個非同步函式，讓fetchCurrentWeather()、fetchWeatherForecast()、fetchMoment()的API都回傳成功才繼續執行
     const fetchingData = async () => {
       const [currentWeather, weatherForecast, currentMoment] =
         await Promise.all([
